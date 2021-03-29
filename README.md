@@ -2,7 +2,7 @@
 
 This contains the complete sample code that accompanies the Dolby.io blog post Token Server with AWS Services by Katie Gray.
 
-Each numbered section corresponds to sections in the blog post. For more details on each section, please see the blog post.
+Each numbered section corresponds to sections in the blog post. For more details on each section, please see the [blog post](https://dolby.io/blog/generate-access-tokens-using-aws-services).
 
 ## You Will Need:
 
@@ -10,7 +10,7 @@ Each numbered section corresponds to sections in the blog post. For more details
 
 ✅ Access to AWS service Console - signed in as IAM User with access to Lambda and API Gateway
 
-✅ Have (AWS Command Line Interface (CLI))[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html] Installed and (AWS Credentials Configured)[https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html]
+✅ Have [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) Installed and [AWS Credentials Configured](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
 
 ### 📁 0-set-up-local-authentication-server-and-client
 
