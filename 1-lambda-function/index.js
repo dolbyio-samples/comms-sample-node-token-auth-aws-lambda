@@ -13,26 +13,26 @@ const config = {
 };
 
 async function fetchToken() {
-  const token = {};
-  const res = {};
-  await axios
-    .post(url, {}, config)
-    .then(function (response) {
-      token.access_token = response.data.access_token;
-      token.refresh_token = response.data.refresh_token;
-      res.statusCode = 200;
-      res.headers = {
+  try {
+    const response = await axios.post(url, {}, config);
+    const { access_token, refresh_token } = response.data;
+    return {
+      statusCode: 200,
+      headers: {
         'Access-Control-Allow-Headers': 'Content-Type',
         'Access-Control-Allow-Origin': '*', // NOTE this is to allow for CORS when testing locally
         'Access-Control-Allow-Methods': 'OPTIONS,POST,GET',
-      };
-      res.body = JSON.stringify(token);
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(error);
-    });
-  return res;
+      },
+      body: JSON.stringify({ access_token, refresh_token }),
+    };
+  } catch (error) {
+    // handle error
+    console.log(error);
+    return {
+      statusCode: 500,
+      body: JSON.stringify({ error: 'Unexpected error' }),
+    };
+  }
 }
 
 exports.handler = async (event) => {
