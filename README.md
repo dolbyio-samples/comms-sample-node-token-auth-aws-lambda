@@ -6,7 +6,7 @@ Each numbered section corresponds to sections in the blog post. For more details
 
 ## You Will Need:
 
-✅ Dolby.io Interactivity key and secret - sign up at [Dolby.io](dolby.io)
+✅ Dolby.io Communications key and secret - sign up at [Dolby.io](dolby.io)
 
 ✅ Access to AWS service Console - signed in as IAM User with access to Lambda and API Gateway
 
@@ -14,7 +14,7 @@ Each numbered section corresponds to sections in the blog post. For more details
 
 ### 📁 0-set-up-local-authentication-server-and-client
 
-Run a local Express server to get an access token from the Interactivity API. Includes sample client code to test server.
+Run a local Express server to get an access token from the Dolby.io Communications API. Includes sample client code to test server.
 
 ```
 
@@ -38,7 +38,7 @@ npm init -y
 npm install axios express dotenv cors
 ```
 
-2. create a .env file and replace with your own Interactivity key and secret (see .example.env)
+2. create a .env file and replace with your own Communications key and secret (see .example.env)
 
 ```
 CONSUMER_KEY=your_key
@@ -93,11 +93,11 @@ It contains a `fetch_token.zip` file that contains the Lambda function from sect
 
 > run `create_fetch_token_iam_role.sh` to create an ARN Role if you do not have one. This creates an execution role and attached the role policy to give the Lambda function permissions as a service role
 
-✅ Interactivity Consumer Key
+✅ Communications Consumer Key
 
-✅ Interactivity Consumer Secret
+✅ Communications Consumer Secret
 
-👉 _Optional_: name for function (default is fetchInteractivityToken)
+👉 _Optional_: name for function (default is fetchCommunicationsToken)
 
 👉 _Optional_: region (default is us-west-1)
 
@@ -109,7 +109,7 @@ It contains a `fetch_token.zip` file that contains the Lambda function from sect
 
 # returns:
 
-Created a new role called FetchInteractivityTokenRole. The ARN for this is: ROLE_ARN
+Created a new role called FetchCommunicationsTokenRole. The ARN for this is: ROLE_ARN
 
 # create Lambda and API Gateway Setup to get Invoke URL for access token
 # function name and region are optional
@@ -118,6 +118,6 @@ Created a new role called FetchInteractivityTokenRole. The ARN for this is: ROLE
 
 # returns:
 
-URL to use to GET interactivity access token:
+URL to use to GET Communications access token:
 https://XXXXXXXXXX.execute-api.REGION.amazonaws.com/prod/token
 ```
