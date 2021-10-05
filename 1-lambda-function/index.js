@@ -9,12 +9,13 @@ const config = {
   headers: {
     Authorization: 'Basic ' + credentials,
   },
-  body: { grant_type: 'client_credentials' },
 };
+
+const data = { grant_type: 'client_credentials' };
 
 async function fetchToken() {
   try {
-    const response = await axios.post(url, {}, config);
+    const response = await axios.post(url, data, config);
     const { access_token, refresh_token } = response.data;
     return {
       statusCode: 200,
