@@ -141,8 +141,7 @@ If there are any suggestions or if you would like to deliver any positive notes,
 For a deeper dive, we welcome you to review the following:
  - [Communcations API](https://docs.dolby.io/communications-apis/docs/overview-introduction)
  - [Deliver Video Conference Recordings with Webhooks and AWS Lambda](https://dolby.io/blog/deliver-video-conference-recordings-with-webhooks-and-aws-lambda/)
- - [Using The Dolby.io Streaming REST API and Postman to Generate new Broadcasting Tokens
-]([https://dolby.io/search/?_blog_categories=media&_search=android](https://dolby.io/blog/using-the-dolby-io-streaming-rest-api-and-postman-to-generate-new-broadcasting-tokens/))
+ - [Using The Dolby.io Streaming REST API and Postman to Generate new Broadcasting Tokens](https://dolby.io/blog/using-the-dolby-io-streaming-rest-api-and-postman-to-generate-new-broadcasting-tokens/)
  - [Storing Dolby.io Tokens with Cookies in JavaScript](https://dolby.io/blog/getting-started-with-oauth2-for-media-processing-with-javascript/)
  - [Blog Session - Communications API](https://dolby.io/search/?_blog_categories=communications)
 
