@@ -1,16 +1,22 @@
+[![License](https://img.shields.io/github/license/dolbyio-samples/blog-android-audio-recording-examples)](LICENSE)
+
 # Token Server with AWS Services
 
 This contains the complete sample code that accompanies the Dolby.io blog post Token Server with AWS Services by Katie Gray.
-
 Each numbered section corresponds to sections in the blog post. For more details on each section, please see the [blog post](https://dolby.io/blog/generate-access-tokens-using-aws-services).
 
-## You Will Need:
+# Overview
+Building applications utilizing the Dolby.io Interactivity API requires a key and a secret for authentication. This tutorial will demonstrate how to set up an API Gateway to trigger the Lambda function to have the authentication server return an access token built on AWS Services.
 
-✅ Dolby.io Communications key and secret - sign up at [Dolby.io](dolby.io)
+# Requirements
 
-✅ Access to AWS service Console - signed in as IAM User with access to Lambda and API Gateway
+- Dolby.io Communications key and secret - sign up at [Dolby.io](dolby.io)
 
-✅ Have [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) Installed and [AWS Credentials Configured](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
+- Access to AWS service Console - signed in as IAM User with access to Lambda and API Gateway
+
+- Have [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) Installed and [AWS Credentials Configured](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
+
+# Getting Started
 
 ### 📁 0-set-up-local-authentication-server-and-client
 
@@ -121,3 +127,40 @@ Created a new role called FetchCommunicationsTokenRole. The ARN for this is: ROL
 URL to use to GET Communications access token:
 https://XXXXXXXXXX.execute-api.REGION.amazonaws.com/prod/token
 ```
+
+# Report a Bug 
+In the case any bugs occur, report it using Github issues, and we will see to it. 
+
+# Forking
+We welcome your interest in trying to experiment with our repos. 
+
+# Feedback 
+If there are any suggestions or if you would like to deliver any positive notes, feel free to open an issue and let us know!
+
+# Learn More
+For a deeper dive, we welcome you to review the following:
+ - [Communcations API](https://docs.dolby.io/communications-apis/docs/overview-introduction)
+ - [Deliver Video Conference Recordings with Webhooks and AWS Lambda](https://dolby.io/blog/deliver-video-conference-recordings-with-webhooks-and-aws-lambda/)
+ - [Using The Dolby.io Streaming REST API and Postman to Generate new Broadcasting Tokens
+]([https://dolby.io/search/?_blog_categories=media&_search=android](https://dolby.io/blog/using-the-dolby-io-streaming-rest-api-and-postman-to-generate-new-broadcasting-tokens/))
+ - [Storing Dolby.io Tokens with Cookies in JavaScript](https://dolby.io/blog/getting-started-with-oauth2-for-media-processing-with-javascript/)
+ - [Blog Session - Communications API](https://dolby.io/search/?_blog_categories=communications)
+
+# About Dolby.io
+Dolby.io is a new developer platform by Dolby Laboratories using decades of Dolby's sight and sound technology. Learn how to integrate APIs for real-time streaming, communications, and media processing solutions. You can find the tools, documentation, and sample projects to help you get started.
+
+<div align="center">
+  
+[![Dolby.io Home](https://img.shields.io/badge/-HomePage-yellowgreen)](https://dolby.io/)
+&nbsp; &nbsp; &nbsp;
+[![Dolby.io Documentation](https://img.shields.io/badge/-Our%20Documentation-orange)](https://docs.dolby.io/)
+&nbsp; &nbsp; &nbsp;
+
+[![@dolbyio on LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/dolbyio)
+&nbsp; &nbsp; &nbsp;
+[![@dolbyio on YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@DolbyIO/)
+&nbsp; &nbsp; &nbsp;
+[![@dolbyio on Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/DolbyIO/)
+&nbsp; &nbsp; &nbsp;
+  
+</div>
