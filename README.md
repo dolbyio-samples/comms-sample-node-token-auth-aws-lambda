@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/github/license/dolbyio-samples/blog-android-audio-recording-examples)](LICENSE)
+[![License](https://img.shields.io/github/license/dolbyio-samples/blog-token-server-with-aws-services)](LICENSE)
 
 ![Blog picture](https://dolby.io/wp-content/uploads/2021/09/Generate-Access-Tokens-Using-AWS-Services.jpg)
 
