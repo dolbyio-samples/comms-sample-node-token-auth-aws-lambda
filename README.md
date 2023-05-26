@@ -1,16 +1,24 @@
+[![License](https://img.shields.io/github/license/dolbyio-samples/blog-token-server-with-aws-services)](LICENSE)
+
+![Blog picture](https://dolby.io/wp-content/uploads/2021/09/Generate-Access-Tokens-Using-AWS-Services.jpg)
+
 # Token Server with AWS Services
 
 This contains the complete sample code that accompanies the Dolby.io blog post Token Server with AWS Services by Katie Gray.
-
 Each numbered section corresponds to sections in the blog post. For more details on each section, please see the [blog post](https://dolby.io/blog/generate-access-tokens-using-aws-services).
 
-## You Will Need:
+# Overview
+Building applications utilizing the Dolby.io Communications API requires a key and a secret for authentication. This tutorial will demonstrate how to set up an API Gateway to trigger the Lambda function to have the authentication server return an access token built on AWS Services.
 
-✅ Dolby.io Communications key and secret - sign up at [Dolby.io](dolby.io)
+# Requirements
 
-✅ Access to AWS service Console - signed in as IAM User with access to Lambda and API Gateway
+- Dolby.io Communications key and secret - sign up at [Dolby.io](dolby.io)
 
-✅ Have [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) Installed and [AWS Credentials Configured](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
+- Access to AWS service Console - signed in as IAM User with access to Lambda and API Gateway
+
+- Have [AWS Command Line Interface (CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) Installed and [AWS Credentials Configured](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html)
+
+# Getting Started
 
 ### 📁 0-set-up-local-authentication-server-and-client
 
@@ -121,3 +129,40 @@ Created a new role called FetchCommunicationsTokenRole. The ARN for this is: ROL
 URL to use to GET Communications access token:
 https://XXXXXXXXXX.execute-api.REGION.amazonaws.com/prod/token
 ```
+
+# Report a Bug 
+In the case any bugs occur, report it using Github issues, and we will see to it. 
+
+# Forking
+We welcome your interest in trying to experiment with our repos. 
+
+# Feedback 
+If there are any suggestions or if you would like to deliver any positive notes, feel free to open an issue and let us know!
+
+# Learn More
+For a deeper dive, we welcome you to review the following:
+ - [Communcations API](https://docs.dolby.io/communications-apis/docs/overview-introduction)
+ - [Deliver Video Conference Recordings with Webhooks and AWS Lambda](https://dolby.io/blog/deliver-video-conference-recordings-with-webhooks-and-aws-lambda/)
+ - [Using The Dolby.io Streaming REST API and Postman to Generate new Broadcasting Tokens](https://dolby.io/blog/using-the-dolby-io-streaming-rest-api-and-postman-to-generate-new-broadcasting-tokens/)
+ - [Storing Dolby.io Tokens with Cookies in JavaScript](https://dolby.io/blog/getting-started-with-oauth2-for-media-processing-with-javascript/)
+ - [Blog Session - Communications API](https://dolby.io/search/?_blog_categories=communications)
+
+# About Dolby.io
+Using decades of Dolby's research in sight and sound technology, Dolby.io provides APIs to integrate real-time streaming, voice & video communications, and file-based media processing into your applications. [Sign up for a free account](https://dashboard.dolby.io/signup/) to get started building the next generation of immersive, interactive, and social apps.
+
+<div align="center">
+  <a href="https://dolby.io/" target="_blank"><img src="https://img.shields.io/badge/Dolby.io-0A0A0A?style=for-the-badge&logo=dolby&logoColor=white"/></a>
+&nbsp; &nbsp; &nbsp;
+  <a href="https://docs.dolby.io/" target="_blank"><img src="https://img.shields.io/badge/Dolby.io-Docs-0A0A0A?style=for-the-badge&logoColor=white"/></a>
+&nbsp; &nbsp; &nbsp;
+  <a href="https://dolby.io/blog/category/developer/" target="_blank"><img src="https://img.shields.io/badge/Dolby.io-Blog-0A0A0A?style=for-the-badge&logoColor=white"/></a>
+</div>
+
+<div align="center">
+&nbsp; &nbsp; &nbsp;
+  <a href="https://youtube.com/@dolbyio" target="_blank"><img src="https://img.shields.io/badge/YouTube-red?style=flat-square&logo=youtube&logoColor=white" alt="Dolby.io on YouTube"/></a>
+&nbsp; &nbsp; &nbsp; 
+  <a href="https://twitter.com/dolbyio" target="_blank"><img src="https://img.shields.io/badge/Twitter-blue?style=flat-square&logo=twitter&logoColor=white" alt="Dolby.io on Twitter"/></a>
+&nbsp; &nbsp; &nbsp;
+  <a href="https://www.linkedin.com/company/dolbyio/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="Dolby.io on LinkedIn"/></a>
+</div>
