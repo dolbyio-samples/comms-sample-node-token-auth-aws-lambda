@@ -8,7 +8,7 @@ This contains the complete sample code that accompanies the Dolby.io blog post T
 Each numbered section corresponds to sections in the blog post. For more details on each section, please see the [blog post](https://dolby.io/blog/generate-access-tokens-using-aws-services).
 
 # Overview
-Building applications utilizing the Dolby.io Interactivity API requires a key and a secret for authentication. This tutorial will demonstrate how to set up an API Gateway to trigger the Lambda function to have the authentication server return an access token built on AWS Services.
+Building applications utilizing the Dolby.io Communications API requires a key and a secret for authentication. This tutorial will demonstrate how to set up an API Gateway to trigger the Lambda function to have the authentication server return an access token built on AWS Services.
 
 # Requirements
 
