@@ -1,6 +1,6 @@
-[![License](https://img.shields.io/github/license/dolbyio-samples/blog-token-server-with-aws-services)](LICENSE)
+# :warning: This repository is no longer maintained :warning:
 
-![Blog picture](https://dolby.io/wp-content/uploads/2021/09/Generate-Access-Tokens-Using-AWS-Services.jpg)
+[![License](https://img.shields.io/github/license/dolbyio-samples/blog-token-server-with-aws-services)](LICENSE)
 
 # Token Server with AWS Services
 
